@@ -65,3 +65,13 @@ else:
 
 
 
+
+#WAP to check if the number is multiple of 7 or not 
+num = int(input("enter the num : "))
+if(num %7 == 0 ):
+    print("it is multiple of 7 ")
+else :
+    print("it is not a multiple of 7 ")
+
+
+
