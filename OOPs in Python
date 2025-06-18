@@ -1,1 +1,49 @@
 
+class bank:
+    def __init__(self,holder,amount):
+
+        self.holder = holder 
+        self.amount = amount 
+def deposit(self , x):
+        self.amount += x 
+        print("now current amount is : ", self.amount)
+    
+    def withdraw(self , y):
+        self.amount -= y 
+        print("remaining amount is : ", self.amount)
+
+u1 = bank("aman", 2600)
+u2 = bank("aman", 4400)
+#inheritance 
+
+class curr_account(bank):
+    def __init__(self, holder , amount , overdraft):
+        super().__init__(holder , amount)
+        self.overdraft = overdraft
+
+    #polymorphism 
+    def withdraw(self , x ):
+        if (x<= self.amount + self.overdraft):
+            self.amount -=x
+
+
+class saving_account(bank):
+    def __init__(self , holder , amount , ab):
+        super().__init__(holder , amount)
+        self.ab = ab 
+
+    def withdraw(self , y):
+        if(y >= self.ab):
+            self.amount -= y
+
+
+
+#Abstraction 
+
+
+
+
+
+
+
+    
