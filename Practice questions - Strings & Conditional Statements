@@ -35,3 +35,33 @@ elif(marks>=60 and marks <= 70):
 else:
     print("INvalid Grade")
 
+
+
+
+#WAP to check odd or even 
+num = int(input("enter the num : "))
+if(num%2 == 0 ):
+    print("EVEN")
+else:
+    print("ODD")
+
+
+
+
+#WAP to find the greatest of the 3 numbers entered by the user 
+a = int(input("enter 1st num : "))
+b = int(input("enter 2nd num : "))
+c = int(input("enter 3rd num : "))
+
+if( a>b and a>c):
+    print("a is greatest")
+elif(b>c and b>a):
+    print("b is greatest")
+elif( c> a and c>b):
+    print( "c is greatest ")
+else:
+    print("none is greatest")
+
+
+
+
