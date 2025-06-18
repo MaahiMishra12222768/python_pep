@@ -1,1 +1,15 @@
+#WAP to take input users first name and print its length 
+a = input("enter ur first name : ")
+print(len(a))
+
+#WAP to find the occurrenceof $ in a string 
+b = input("enter ur string : ")
+print(b.count("$"))
+
+#Apply for driver lisence or not 
+age = int(input("enter ur age : "))
+if(age>=18):
+    print("can applyy for it")
+else:
+    print("can not apply for it ")
 
