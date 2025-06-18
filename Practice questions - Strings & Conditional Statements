@@ -2,9 +2,16 @@
 a = input("enter ur first name : ")
 print(len(a))
 
+
+
+
 #WAP to find the occurrenceof $ in a string 
 b = input("enter ur string : ")
 print(b.count("$"))
+
+
+
+
 
 #Apply for driver lisence or not 
 age = int(input("enter ur age : "))
@@ -12,4 +19,19 @@ if(age>=18):
     print("can applyy for it")
 else:
     print("can not apply for it ")
+
+
+
+#Grade based on marks 
+marks = int(input("enter ur marks : "))
+if(marks >= 90 ):
+    print("Grade A ")
+elif(marks >=80 and marks <=90):
+    print("Grade B")
+elif(marks>=70 and marks <= 80 ):
+    print("Grade C")
+elif(marks>=60 and marks <= 70):
+    print("Grade D")
+else:
+    print("INvalid Grade")
 
