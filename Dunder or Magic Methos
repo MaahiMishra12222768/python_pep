@@ -1,0 +1,36 @@
+class bank:
+    def __init__(self,holder,amount):
+
+        self.holder = holder 
+        self.amount = amount 
+    
+    #dunder method
+    def __str__(self):
+        return self.holder
+
+    #operator overloading
+    def __add__(self , other):
+        if (self.holder == other.holder):
+            return bank(self.holder , self.amount + other.amount)
+        
+
+    def deposit(self , x):
+        self.amount += x 
+        print("now current amount is : ", self.amount)
+    
+    def withdraw(self , y):
+        self.amount -= y 
+        print("remaining amount is : ", self.amount)
+
+u1 = bank("aman", 2600)
+u2 = bank("aman", 4400)
+print(u1+u2)
+
+#print(u1)
+#print(u1.holder)
+
+#print(u1.amount)
+#.withdraw(1000)
+#u1.deposit(4000)
+
+
