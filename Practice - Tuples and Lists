@@ -1,0 +1,91 @@
+
+#List Methods
+
+marks = [3,7,4,2,99,23,11,38,88]
+marks.append(55)
+#adds 55 in last 
+print(marks)
+
+#sorts in ascending order
+marks.sort()
+print(marks)
+
+
+#sort in descending order 
+marks.sort(reverse = True)
+print(marks)
+
+
+#reverses the list
+marks.reverse()
+print(marks)
+
+#insert element at particular index
+marks.insert(4 , 46 )
+marks.insert(7,46)
+print(marks)
+
+#removes the first occurence of element 
+marks.remove(46)
+print(marks)
+
+#removes element at index 
+marks.pop(4)
+print(marks)
+
+li = (2,3,4,5,6)
+print(li)
+
+
+#TUPLE
+
+tup = (3,77,1,88,34,2,45,65,34)
+print(tup)
+print(type(tup))
+
+print("Tuple slicing is same as list or string slicing ")
+
+#methods in tuples
+
+#returns index of first occurence of ele 
+print(tup.index(34))
+
+#counts the occurence of elements 
+print((tup.count(34)))
+
+
+#WAP to ask the user to enter names of their 3 favourite movies and store them in a list 
+
+movies = []
+mov1 = input("enter 1st movie : ")
+mov2 = input("enter 2nd movie : ")
+mov3 = input("enter 3rd movie : ")
+
+movies.append(mov1)
+movies.append(mov2)
+movies.append(mov3)
+print(movies)
+
+
+#WAP to check if a list contaions a palindrome of elments.(Hint : use copy() method)
+
+l1 = [1,2,3,2,1]
+l2 = l1.copy()
+print(l2)
+l2.reverse()
+print(l2)
+if(l1==l2):
+    print("list is palindrome")
+else:
+    print("list is not plaindrome")
+
+
+#WAP to count the number of students with the grade "A" in the following tuple
+tup = ("C","D","A","A","B","B","A")
+print(tup.count("A"))
+
+
+#Store the above values in a list and sort them from "A" to "D"
+tupu = ["C","D","A","A","B","B","A"]
+tupu.sort()
+print(tupu)
