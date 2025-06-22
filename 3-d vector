@@ -1,0 +1,65 @@
+import math
+class Vector : 
+        def __init__(self  ,  x ,  y  , z) : 
+                self.x =  x 
+                self.y  = y
+                self.z =  z 
+        
+
+        def  __str__(self) : 
+                s =  f"{self.x}i +  {self.y}j +  {self.z}k"
+                return s
+        
+
+        def  __eq__(self ,  other) : 
+                return  self.x == other.x and  self.y  == other.y and self.z == other.z
+
+        
+
+        def __add__(self  , other) : 
+                return Vector(self.x + other.x ,  self.y + other.y ,  self.z + other.z)
+
+        
+
+        def magnitude(self) : 
+                ans  =  math.sqrt(self.x **2 +  self.y **2  + self.z**2 )
+                return ans 
+        
+ 
+        def __lt__(self  , other) : 
+                return  self.magnitude() <  other.magnitude() 
+        
+
+        def  __mul__(self , othe) : 
+                return Vector(self.x * other.x ,  self.y *other.y ,  self.z *other.z)
+
+        # cross product 
+        def __getitem__(self ,  index) : 
+                if index == 0 : 
+                        return self.x 
+                
+        def cross(self  ,  v1  , v2) : 
+                x1 =   v1.y*v2.z -  v1.z*v2.y 
+                y1 =   v1.x*v2.z -  v1.z*v2.x 
+                z1 =  v1.x*v2.y -  v1.y*v2.x
+                return Vector(x1 , y1 , z1)
+
+        @staticmethod
+        def zero() : 
+                return Vector(0 , 0  ,0)
+
+
+
+
+
+
+v1 = Vector(1 , 2 ,3)
+
+v2  = Vector(3 ,5 ,0)
+print(v1)
+print(v2)
+v3 =  v1+  v2 
+print(v3)
+
+print(v1[0])
+print(v1 ==  v2)
