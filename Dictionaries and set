@@ -1,0 +1,144 @@
+
+#DICTIONARY 
+
+dict ={
+    "Name" : "Maahi Bhai",
+    "Age " : 18,
+    "LANG ": "C++"
+}
+
+print(dict)
+print(type(dict)) 
+print(dict["LANG "])
+dict["Age "] = 19 
+print(dict)
+
+
+#NESTED DICTIONARIES 
+
+dict ={
+    "name" : "Maahuuuu",
+    "subjects" : {
+        "phy" : 55,
+        "maths": 77,
+        "chem ": 99
+    }
+}
+
+print(dict )
+print(dict["subjects"]["chem "])
+
+
+#DICTIONARIES METHODS 
+
+print(dict.keys())
+print(list(dict.keys()))
+
+print(dict.values())
+print(list(dict.values()))
+
+print(dict.items())
+print(list(dict.items()))
+
+print(dict.get("name"))
+
+
+
+                      #SETS 
+
+s = {1,2,3,"maahu ", "ayushiii", 9.9}
+print(s)
+print(type(s))
+
+#empty set
+
+u = set()
+print(type(u))
+
+
+#SET METHODS 
+
+us = {1,2,3,4,5,6,7,8,8}
+print(us)
+print(type(s))
+
+us.add(44)
+print(us)
+
+us.remove(5)
+print(us)
+
+us.pop()
+print(us)
+
+us.clear()
+print(us)
+
+#intersetcion and union 
+
+s1 = {1,2,3,4,5,6}
+s2 = {4,5,6,7,8,9}
+
+print(s1.union(s2))
+
+print(s1.intersection(s2))
+
+
+#PRACTICE QUESTIONS 
+
+
+""" 
+    Store the follwoing word meanings in a python dict :
+    table: "a pice of furniture " , " list of facts and figure"
+    cat : " a small animal "
+
+    
+    """
+
+dict = {
+    "table " : ["a pice of furniture" , " list of facts and fiigures "], 
+    "cat" : "a small animal "
+}
+
+print(dict )
+
+
+"""
+    You are given a list of subjects for students . Assume one classroom is required for 1 subject . How many classrooms are needed by all students . 
+    "python " , "java" , " c++" , " python " , " javascript ", 
+    "java" , " python " , " java " , "c++" , " c"
+
+"""
+
+s = { "python" , "java" , "c++" , "python" , "javascript", 
+    "java" , "python" , "java" , "c++" , "c"}
+print(len(s))
+
+
+"""
+    WAP to enter marks of 3 subjects from the user and store them in a dictionary. Start with an empty dictionary and add one by one. Use subject name as key and marks as value. 
+
+"""
+
+m1 = ( int(input("enter phy marks 1 :")))
+m2 = ( int(input("enter chem marks 2 :")))
+m3 = ( int(input("enter maths marks 3 :")))
+
+di = {}
+di.update({"phy": m1})
+di.update({"chem": m2})
+di.update({"maths": m3})
+print(di)
+
+
+
+"""
+    Figure out a way to store 9 & 9.0 as separate value in the set. 
+    (you can take help of built in data types)
+"""
+
+values = {
+    ("float " , 9.0),
+    ("int ", 9 )
+}
+print(values)
