@@ -1,0 +1,46 @@
+#LOOPS PRACTICE 
+
+#print numbers from 1 to 100 
+count = 1 ; 
+while count<=100:
+    print(count)
+    count+=1
+
+
+#Print numbers from 100 to 1
+count = 100 
+while count>= 1 :
+    print(count)
+    count-=1
+
+
+#Print the multiplication table of a number n 
+a = int(input("enter the number "))
+count = 1 
+while count<=10:
+    print(a," times" , count , " = ", a*count)
+    count+=1
+
+
+#print the elements of the following list using a loop 
+# [1,4,9,16,25,36,49,64,81,100]
+li = [1,4,9,16,25,36,49,64,81,100]
+count = 0 
+while count< len(li):
+    print(li[count])
+    count+=1
+
+
+#Search for a number x in this tuple using loop 
+# [1,4,9,16,25,36,49,64,81,100]
+x = int(input("enter the value of x "))
+count = 0 
+while count < len(li):
+    if(li[count]== x ):
+        print(count)
+    
+    
+    count+=1
+
+
+
