@@ -44,3 +44,48 @@ while count < len(li):
 
 
 
+
+
+
+            #FOR LOOP 
+
+fruits = ["apple", "banana", "watermelon", "pineapple","kiwi"]
+for val in fruits :
+    print(val)
+
+tup = (1,2,3,4,5,6)
+for num in tup :
+    print(num)
+
+#Print the elements of the following list using a  loop 
+li = [1,4,9,16,25,36,49,64,81,100]
+for val in li :
+    print(val)
+
+
+#Search for a number x in this tuple using loop : 
+tup =  [1,4,9,16,25,36,49,64,81,100]
+x = int(input("enter x : "))
+for val in tup : 
+    if(val == x ):
+        print("found ", x)
+else:
+    print("loop ended !!")
+
+
+#range function 
+seq = range(5)
+print(seq[0])
+print(seq[1])
+print(seq[2])
+print(seq[3])
+
+for i in seq :
+    print(i)
+
+
+
+
+
+
+
