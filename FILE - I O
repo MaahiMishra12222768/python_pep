@@ -1,1 +1,57 @@
+#function to find the average of 3 numbers 
+def avg(num1 , num2, num3):
+    return (num1+num2+num3)/3
+
+print(avg(3,4,5))
+
+
+#WA function to print the length of a list. (list is the parameter)
+def calc_len(li):
+    length = len(li)
+    print(length)
+    return length
+list = [1,2,3,4,5,6,6,7]
+calc_len(list)
+
+
+#WA function to find the factorial of n (n is the parameter)
+def fact(num ):
+    ans = 1 
+    for i in range(1, num+1):
+        ans *= i 
+    print(ans)
+    return ans
+fact(3)
+
+
+#WAF to convert USD to INR
+
+def conv(usd):
+    inr = usd*83
+    print(inr)
+    return inr
+conv(55)
+
+"""
+f = open("demo.txt", "r")
+print(f.read())
+print(type(f.read()))
+print(f.read(5))
+
+print(f.readline())
+
+"""
+
+"""
+f = open("demo.txt", "w")
+f.write("I am kutttaa . I am also kamina ")
+
+"""
+
+"""
+f = open("demo.txt", "a")
+f.write("I am kutttaa . I am also kamina ")
+
+"""
+
 
